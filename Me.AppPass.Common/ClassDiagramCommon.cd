@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Me.Utils.MyString" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Me.Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Me.Utils.MyMaths" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAUAAAAAAACAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Me.Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Me.Utils.MyVersions" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAQAIAAAAAAQAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Me.Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Me.Utils.MyTrace" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgEAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Me.Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Me.Utils.MyWmi" Collapsed="true">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Me.Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Me.Utils.MyFiles" Collapsed="true">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Me.Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Me.Utils.MyCulture" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Me.Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Me.Utils.MyNetwork" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAEAAAAEAAA=</HashCode>
+      <FileName>Me.Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Me.Utils.MySystem" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAgAAAAABAAAAAACAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Me.Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Me.Utils.MyError" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Me.Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Me.Utils.MyEnumExtender" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Me.Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Me.AppPass.Common.Token">
+    <Position X="6.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAiAAAAIgAAAAAAAAAAAAAAQAAAAEAAAA=</HashCode>
+      <FileName>Token.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

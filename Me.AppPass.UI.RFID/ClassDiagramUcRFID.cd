@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Me.AppPass.UI.RFID.UcRFID">
+    <Position X="3.25" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAOAAAAAEgACACBACAAEAADAAAAEICAgAACA=</HashCode>
+      <FileName>UcRFID.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="rfid" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Phidgets.RFID">
+    <Position X="7" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Phidgets.RFID.RFIDTagProtocol" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Me.AppPass.UI.Base.UcBase">
+    <Position X="0.5" Y="1" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Phidgets.Phidget">
+    <Position X="9.75" Y="0.5" Width="2.75" />
+    <NestedTypes>
+      <Enum Name="Phidgets.Phidget.LogLevel" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Enum Name="Phidgets.Phidget.PhidgetClass" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Enum Name="Phidgets.Phidget.PhidgetID" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
