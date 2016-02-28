@@ -12,25 +12,30 @@ If the validator is disconnected system whereas the application is in the course
 The solution was conceived to be easily extensible, as well as in with the choice of the validator as of the place of storage of Tokens.
 
 Architecture used is a traditional architecture 3 thirds: sleep user interface, trade layer, layer of access to the data and service layer interfaces.
+
 ![Pipes](Media/VS-Solution.png)
  
 ## User interface layer :
 
 It is implemented in the form of UserControls charged in WinForm (cf. Validator).
+
 ![Pipes](Media/ClassDiagramUI.png) 
 ![Pipes](Media/ClassDiagramUcBase.png)
 ![Pipes](Media/ClassDiagramUcUSB.png)
 ![Pipes](Media/ClassDiagramUcRFID.png)
+
 « UcHost » étant le UserControl parent
  
 ## Business layer :
 
 It is to the minimum reduced, and is present only for one possible evolution of the product. In the current state of the project (v 1.0.0.0), it has practically only one function of footbridge between layers UI and DAL.
+
 ![Pipes](Media/ClassDiagramBLL.png)
  
 ## Data access layer :
 
 It is written to make it possible the application to be evolutionary. It consists of an abstract class (DALValidation), implementing only the methods which are common to all the DAL. Concrete classes DAL (DalAppSettings, DALMsAccess…) derive from this abstract class and implement the methods specific to the type of support. These methods of abstract type, are declared in the abstract class.
+
 ![Pipes](Media/ClassDiagramDAL.png)
  
 ## Interface service layer :
@@ -49,11 +54,13 @@ The class “ServicePlugin” allows the recovery of the plugins and the creatio
 ## Data model :
 
 ![Pipes](Media/ClassDiagramCommon.png)
+
 The application uses a token “Token” for the authentification. It is partly indicated by layer UI, and validated by layer BLL “IsValid”.
  
 ## Validator :
 
 The interface software of the validator was implemented in the form of plugins of the UserControls type. UseControl controlling a material validator must derive from basic control UcBase.
+
 ![Pipes](Media/ClassDiagramUcBase.png)
 ![Pipes](Media/ClassDiagramUcUSB.png)
  
@@ -66,7 +73,9 @@ public static DALValidation MakeDalValidation(string dalAssemblyName, string dal
 ~~~
 The BLL must pass a parameter, the name of the DAL (Me.AppPass.DAL) and the type of DAL to create (eg AppSettings).
 These parameters are defined in "App. Config "(key: DalAssemblyName and DalType).
+
 ![Pipes](Media/ClassDiagramDAL.png)
+
 In its implementation, the DAL "AppSettings" uses the provider "DataProtectionConfigurationProvider" for encrypting the appSettings section.
 ~~~ XML
   <appSettings>
