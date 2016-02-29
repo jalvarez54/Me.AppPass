@@ -590,7 +590,7 @@ namespace Me.Utils
         }
 
         /// <summary>
-        /// TODO: ADD to Me.Utils project
+        /// 
         /// Return caller method name
         /// http://www.codeproject.com/Articles/7964/Logging-method-name-in-NET
         /// </summary>
@@ -603,7 +603,7 @@ namespace Me.Utils
         }
 
         /// <summary>
-        /// TODO: ADD to Me.Utils project
+        /// 
         /// </summary>
         /// <returns></returns>
         public static bool IsAdmin()

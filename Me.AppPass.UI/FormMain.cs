@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Me.Utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Me.Utils;
-using System.Runtime.InteropServices;
+using Me.AppPass.ServiceInterface;
 
 namespace Me.AppPass.UI
 {
@@ -15,13 +16,9 @@ namespace Me.AppPass.UI
 
         internal UcHost ucHost;
 
-        /// <summary>
-        /// Create UcHost an add it to the Form
-        /// </summary>
         public FormMain()
         {
             InitializeComponent();
-
             //
             // Creation of Host uc to be added to the form window.
             //
@@ -47,8 +44,6 @@ namespace Me.AppPass.UI
             }
             // Adding controls
             this.Controls.Add(this.ucHost);
-
         }
-
     }
 }

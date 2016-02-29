@@ -11,9 +11,11 @@ namespace Company.Application
 {
     public partial class FormProtected : Form
     {
+
         public FormProtected()
         {
             InitializeComponent();
         }
+
     }
 }

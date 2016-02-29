@@ -50,15 +50,11 @@ namespace Me.AppPass.UI.Base
 
         }
 
-        private void ApplicationForm_Disposed(object sender, EventArgs e)
-        {
-            this.ParentForm.Show();
-        }
 
         /// <summary>
         /// FormProtected handle
         /// </summary>
-        protected Form ApplicationForm = new Company.Application.FormProtected();
+        protected Form ApplicationForm ;
         /// <summary>
         /// UcHost handle to access some controls
         /// </summary>
@@ -107,8 +103,15 @@ namespace Me.AppPass.UI.Base
             if(this.ApplicationForm == null)
             {
                 this.ApplicationForm = new Company.Application.FormProtected();
+                this.ApplicationForm.FormClosing += ApplicationForm_FormClosing;
+
             }
-            this.ApplicationForm.ShowDialog();
+            this.ApplicationForm.Show();
+        }
+
+        private void ApplicationForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.ApplicationForm = null;
             this.ParentForm.Show();
         }
 
@@ -304,10 +307,13 @@ namespace Me.AppPass.UI.Base
             StackTrace stackTrace = new StackTrace();
             StackFrame stackFrame = stackTrace.GetFrame(1);
             MethodBase methodBase = stackFrame.GetMethod();
+            Type methodsClass = methodBase.DeclaringType;
 
-            string mesPlus = string.Format("[{0}] [{1}] {2}", DateTime.Now, methodBase.Name, message);
+            string callerFullName = string.Format("{0}.{1}()", methodsClass.FullName, methodBase.Name);
 
-            MessageBox.Show(message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            string mesPlus = string.Format("[{0}] [{1}] {3}", DateTime.Now, callerFullName, message);
+
+            MessageBox.Show(message, callerFullName, MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             this.host.StatusMessage = message;
             Trace.TraceError(mesPlus);
@@ -319,8 +325,11 @@ namespace Me.AppPass.UI.Base
             StackTrace stackTrace = new StackTrace();
             StackFrame stackFrame = stackTrace.GetFrame(1);
             MethodBase methodBase = stackFrame.GetMethod();
+            Type methodsClass = methodBase.DeclaringType;
 
-            string mesPlus = string.Format("[{0}] [{1}] {2}", DateTime.Now, methodBase.Name, message);
+            string callerFullName = string.Format("{0}.{1}()", methodsClass.FullName, methodBase.Name);
+
+            string mesPlus = string.Format("[{0}] [{1}] {2}", DateTime.Now, callerFullName, message);
 
             this.host.StatusMessage = message;
             Trace.TraceInformation(mesPlus);
